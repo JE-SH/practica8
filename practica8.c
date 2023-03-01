@@ -1,21 +1,11 @@
 
 #include <stdlib.h>
 #include <string.h>
-
-#include <stdlib.h>
-#include <string.h>
-
 #include "neslib.h"
-
 #include <nes.h>
-
-// link the pattern table into CHR ROM
 //#link "chr_generic.s"
-
 #include "bcd.h"
 //#link "bcd.c"
-
-// VRAM update buffer
 #include "vrambuf.h"
 //#link "vrambuf.c"
 
@@ -33,6 +23,7 @@ const char PALETTE[32] = {
   0x0d,0x2d,0x3a,0x0,	// sprite palette 2
   0x0d,0x27,0x2a	// sprite palette 3
 };
+
 //Funcion con ciclo infinito
 void Vram_Buffer()
 {
